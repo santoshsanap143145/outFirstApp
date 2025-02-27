@@ -1,0 +1,134 @@
+<div class="container mt-5">
+  <div class="row bg-white p-5 mt-5 mb-5">
+    <div class="col-md-12"><h1 class="bg-dark text-white p-4 text-center">This Content is From tables Component</h1></div>
+    <div class="col-md-12">
+      <h3 class="bg-warning text-white fw-bold text-center p-3">
+        Personal Details
+      </h3>
+      <table class="table table-bordered border border-dark text-center">
+        <thead>
+          <tr>
+            <th>Sr No</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Contact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let person of persons; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ person.fname }}</td>
+            <td>{{ person.lname }}</td>
+            <td>{{ person.email }}</td>
+            <td>{{ person.contact }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-md-12">
+      <h3 class="bg-info text-white fw-bold text-center p-3">
+        Students Details
+      </h3>
+      <table class="table table-bordered border border-dark text-center">
+        <thead>
+          <tr>
+            <th>Sr No</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Subject</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let student of students; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ student.name }}</td>
+            <td>{{ student.age }}</td>
+            <td>{{ student.grade }}</td>
+            <td>{{ student.subject }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-md-12">
+      <h3 class="bg-danger text-white fw-bold text-center p-3">
+        Book Details
+      </h3>
+      <table class="table table-bordered border border-dark text-center">
+        <thead>
+          <tr>
+            <th>Sr No</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Genre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let book of books; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ book.title }}</td>
+            <td>{{ book.author }}</td>
+            <td>{{ book.pages }}</td>
+            <td>{{ book.genre }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-md-12">
+      <h3 class="bg-secondary text-white fw-bold text-center p-3">
+        Employee Details
+      </h3>
+      <table class="table table-bordered border border-dark text-center">
+        <thead>
+          <tr>
+            <th>Sr No</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Department</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of employees; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ employee.name }}</td>
+            <td>{{ employee.position }}</td>
+            <td>{{ employee.salary }}</td>
+            <td>{{ employee.department }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-md-12">
+      <h3 class="bg-success text-white fw-bold text-center p-3">
+        products Details
+      </h3>
+      <table class="table table-bordered border border-dark text-center">
+        <thead>
+          <tr>
+            <th>Sr No</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Department</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of products; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ product.name }}</td>
+            <td>{{ product.brand }}</td>
+            <td>{{ product.price }}</td>
+            <td>{{ product.category }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

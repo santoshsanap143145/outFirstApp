@@ -1,0 +1,77 @@
+<div class="container mt-5">
+  
+  <div class="row bg-white p-5">
+    <div class="col-md-12"><h1 class="bg-success text-white p-4 text-center">This Content is From Lists Component</h1></div>
+    <div class="col-md-4">
+      <h3>Skills needed for Front-End Developer</h3>
+      <ul class="list-group">
+        <li
+          *ngFor="let skill of skills"
+          class="list-group-item border border-dark"
+        >
+          I Love {{ skill }}
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4 mb-4">
+      <h3>Types of Drinks</h3>
+      <ul class="list-group">
+        <li
+          *ngFor="let drink of drinks"
+          class="list-group-item border border-dark"
+        >
+          {{ drink }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <h3>Common House Items</h3>
+      <ul class="list-group">
+        <li
+          *ngFor="let houseItem of houseItems"
+          class="list-group-item border border-dark"
+        >
+          {{ houseItem }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <h3>Fun Outdoor Activities</h3>
+      <ul class="list-group">
+        <li
+          *ngFor="let activity of outdoorActivities"
+          class="list-group-item border border-dark"
+        >
+          {{ activity }}
+        </li>
+      </ul>
+    </div>
+
+    <hr />
+
+    <div class="col-md-4 mb-4">
+      <h3>Things in a Pencil Case</h3>
+      <ul class="list-group">
+        <li
+          *ngFor="let item of pencilCaseItems"
+          class="list-group-item border border-dark"
+        >
+          {{ item }}
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4 mb-4">
+      <h3>Random Objects On The Table</h3>
+      <ul class="list-group">
+        <li
+          *ngFor="let item of randomObjects"
+          class="list-group-item border border-dark"
+        >
+          {{ item }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
